@@ -1,0 +1,19 @@
+Compile:  
+(Compiler options:
+-Wall: include warnings. See man page for warnings specified.)
+```
+cc -Wall -c ctest1.c ctest2.c
+```
+Create library "libctest.a": 
+```
+ar -cvq libctest.a ctest1.o ctest2.o
+```
+List files in library: 
+```
+ar -t libctest.a
+```
+Linking with the library:
+```
+cc -o executable-name prog.c libctest.a
+cc -o executable-name prog.c -L/path/to/library-directory -lctest
+```
