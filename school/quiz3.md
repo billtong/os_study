@@ -39,5 +39,19 @@ physical memory is brokent into fixed-sized blocks called frames. Logical memory
 - use a special, small. fast-loopup hardware cache to minimize extra memory traffic of page tables.
 ## Shared Pages 
 # Virtual Memory
+- sparation of logical address from physical address
+- each process has its own virtual address space
+- not all of the program need be in memory at one time
+- logical address space can be bigger than physical address space
 ## Concept
 ## Demand Paging
+- all pages of the process are swapped out
+- swap each page in as it is needed
+- hardware needs to know which pages are in memory
+## Page Replacement
+- dirty bit: add another flag to the page table, indicates that the page has been changed
+[PageFault & FIFO、LRU、OPT](https://blog.csdn.net/u011080472/article/details/51206332)
+## Thrashing
+- amount of memory less than locality of reference, high paging activity, low CPU utilization, system spends all its time swapping pages.
+- solution
+    - monitor page fault frequency of processes: set min and max rate of page faults, if page fault rate is too small, then take frames away, if page fault rate is too large, then give process more frames, may have to suspend another process to give more frames
