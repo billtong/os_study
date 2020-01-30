@@ -1,0 +1,2 @@
+# Computer-System Structures
+- A modern, general-purpose computer system consists of a CPU and a number of device controllers that are connected through a common bus that provides access to shared memory.

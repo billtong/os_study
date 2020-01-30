@@ -1,0 +1,5 @@
+Documentation:35
+Structure & Clarity:15
+Testing:30
+Total:80
+include system output as well to compare. include problem description in your report as well 

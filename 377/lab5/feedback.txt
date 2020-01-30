@@ -1,0 +1,6 @@
+Documentation=4
+Code=2
+testing=4
+prelab=1.5
+Total=11.5
+Remarks=Good documentation and code
